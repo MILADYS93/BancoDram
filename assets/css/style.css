@@ -1,0 +1,524 @@
+body {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+  
+  }
+  
+  #inicio {
+    position: relative;
+    left: 30px;
+  }
+  
+  input::placeholder {
+    color: rgb(116, 116, 116);
+  }
+  
+  #usuario {
+    background-color: #e0defb;
+    padding: 14px 10px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(209, 209, 209);
+    outline: none;
+    box-shadow: 5px 5px 10px rgb(45, 4, 93);
+    margin-top: 100px;
+    margin: 1px;
+  }
+  
+  #contraseña {
+  
+    background-color: #e0defb;
+    padding: 14px 10px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(209, 209, 209);
+    outline: none;
+    box-shadow: 5px 5px 10px rgb(45, 4, 93);
+  }
+  
+  #ingreso {
+    background-color: #374068;
+    padding: 14px 10px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(89, 93, 131);
+    outline: none;
+    box-shadow: 5px 5px 10px rgb(61, 58, 75);
+  }
+  
+  .titulo {
+    margin-bottom: 30px;
+  }
+  
+  .logo {
+    position: relative;
+    width: 350px;
+    left: 500px;
+    top: 80px;
+  }
+  
+  @media (max-width:800px)and (orientation: portrait) {
+    .logo {
+      position: relative;
+      width: 190px;
+      left: 90px;
+    }
+  }
+  
+  .positionLogo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 30px;
+    width: 900px;
+  }
+  
+  
+  #cerrar {
+    position: relative;
+    text-align: center;
+    width: 140px;
+    height: 40px;
+    left: 80%;
+    font-size: 14px;
+    border-radius: 100px;
+    top: -70px;
+    background-color: #374068;
+    padding: 12px 10px;
+    border-radius: 20px;
+    border: 2px solid rgb(89, 93, 131);
+    outline: none;
+    box-shadow: 5px 5px 15px rgb(61, 58, 75);
+    color: white;
+  }
+  
+  .pocisionCerrar {
+    position: absolute;
+    margin-top: -500px;
+  }
+  
+  .Transacciones {
+    color: #000000;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 120px;
+  }
+  
+  .titulo {
+    position: relative;
+    top: 2px;
+    right: 45px;
+    color: #2b2a58;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  }
+  
+  main {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 95%;
+    padding: 30px;
+    margin-top: 80px;
+  
+  }
+  
+  main form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    width: 50%;
+    height: 50%;
+  
+  
+  }
+  
+  main form input:last-child {
+    width: 150px;
+    background-color: #6160ae;
+    border-radius: 100px;
+    color: rgb(248, 248, 248);
+    font-size: 15px;
+    cursor: pointer;
+    padding: 10px;
+  
+  
+  }
+  
+  
+  
+  
+  .operaciones {
+    color: #5599ec;
+    text-align: center;
+    font-size: 30px;
+    display: block;
+  
+  }
+  
+  .menu {
+    background-color: transparent;
+    border: none;
+  
+  }
+  
+  .menu img {
+    width: 230px;
+  }
+
+ 
+  .botontransferir {
+    position: relative;
+    left: 80px;
+    top: 20px;
+    background-color: #374068;
+    padding: 14px 10px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(89, 93, 131);
+    outline: none;
+    box-shadow: 5px 5px 15px rgb(61, 58, 75);
+    color: white;
+  }
+  
+  #factura {
+    position: absolute;
+    top: 8px;
+    padding: 15px;
+    text-align: center;
+    left: 450px;
+    width: 300px;
+    height: 300px;
+    font-size: 20px;
+  
+  }
+  
+  #facturaConsignar {
+    position: absolute;
+    top: 20px;
+    padding: 10px;
+    text-align: center;
+    left: 550px;
+    width: 300px;
+    height: 300px;
+    font-size: 20px;
+  
+  }
+  
+  #facturaRetiro {
+    position: absolute;
+    top: 310px;
+    padding: 15px;
+    text-align: center;
+    left: 750px;
+    width: 300px;
+    height: 300px;
+    font-size: 20px;
+  
+  }
+  
+  #imagenError {
+  
+    position: relative;
+    left: 100px;
+    width: 100px;
+    height: 100px;
+  
+  }
+  
+  .botoncerrar {
+    position: relative;
+    margin-top: 20px;
+    width: 150px;
+    background-color: #374068;
+    border-radius: 100px;
+    color: rgb(251, 248, 248);
+    font-size: 15px;
+    height: 30px;
+    cursor: pointer;
+  }
+  
+  #imagenExitosa {
+    position: relative;
+    left: 100px;
+    width: 100px;
+ 
+  }
+  
+  
+  
+  .TransferirSaldo {
+    position: relative;
+    right: 200px;
+    top: 200px;
+    width: 350px;
+    height: 500px;
+    padding: 30px;
+    text-align: center;
+    color: rgb(15, 15, 16);
+    background-color: #1da3cc81;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.3);
+  
+  }
+  
+  .saldo {
+    position: relative;
+    text-align: center;
+  
+  }
+  
+  .TransferirSaldo h1 {
+    font-size: 25px;
+    text-align: center;
+    color: #0b0b0b;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  }
+  
+  .TransferirSaldo label {
+    position: relative;
+    left: 70px;
+    color: #080808;
+    font-size: 18px;
+  }
+  
+  .TransferirSaldo input[type="text"] {
+  
+    position: relative;
+    left: 60px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  
+  
+  }
+  
+  .confirmar {
+    position: relative;
+    left: 80px;
+    bottom: 50px;
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  .saldodisponible {
+    position: absolute;
+    top: 310px;
+    left: 500px;
+    width: 300px;
+    height: 150px;
+    text-align: center;
+    color: rgb(15, 15, 16);
+    background-color: #1da3cc81;
+    border: 4px solid #cdc8c8;
+    border-radius: 5px;
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.3);
+  }
+  
+  #formularioTranferencia {
+    position: absolute;
+    margin-top: 10px;
+    gap: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+  
+  }
+  
+  #formularioConsignar {
+    position: absolute;
+    margin-top: 10px;
+    gap: 10px;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+  
+  }
+  
+  .consignarSaldo {
+    position: relative;
+    right: 200px;
+    top: 200px;
+    width: 350px;
+    height: 500px;
+    padding: 30px;
+    text-align: center;
+    color: rgb(15, 15, 16);
+    background-color: #1da3cc81;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.3);
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+  }
+  .botonConsignar{
+    position: relative;
+    left: 80px;
+    top: 20px;
+    background-color: #374068;
+    padding: 14px 10px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(89, 93, 131);
+    outline: none;
+    box-shadow: 5px 5px 15px rgb(61, 58, 75);
+    color: white;
+  }
+  
+  .retirarSaldo {
+    font-size: 20px;
+    text-align: center;
+    color: #0b0b0b;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  }
+  
+  .retirarSaldo h1 {
+    font-size: 25px;
+    text-align: center;
+    color: #0b0b0b;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  }
+  
+  .retirarSaldo label {
+    position: relative;
+    left: 85px;
+    color: #080808;
+    font-size: 18px;
+  }
+  
+  .retirarSaldo input[ type="text"] {
+    position: relative;
+    left: 80px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  
+  }
+  .botonretirar{
+    position: relative;
+    left: 80px;
+    top: 20px;
+    background-color: #374068;
+    padding: 14px 18px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(89, 93, 131);
+    outline: none;
+    box-shadow: 5px 5px 15px rgb(61, 58, 75);
+    color: white;
+  }
+  #formularioRetiro {
+    position: absolute;
+    margin-top: 10px;
+    gap: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+  }
+  
+  .retirarSaldo {
+    position: relative;
+    right: 200px;
+    top: 200px;
+    width: 350px;
+    height: 500px;
+    padding: 30px;
+    text-align: center;
+    color: rgb(15, 15, 16);
+    background-color: #1da3cc81;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.3);
+  }
+  
+  
+  .tablaHistorial {
+    position: relative;
+    left: 370px;
+    top: 80px;
+    width: 350px;
+    height: 700px;
+    padding: 30px;
+    text-align: center;
+    color: rgb(15, 15, 16);
+    background-color: #1da3cc81;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.3);
+  }
+  
+  #cuenta {
+    position: relative;
+    left: 80px;
+    background-color: #ffffff;
+    padding: 14px 10px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(209, 209, 209);
+    outline: none;
+    box-shadow: 5px 5px 10px rgb(99, 98, 115);
+    margin-top: 100px;
+    margin: 1px;
+  }
+  
+  #cantidad {
+    position: relative;
+    left: 80px;
+    background-color: #ffffff;
+    padding: 14px 10px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(209, 209, 209);
+    outline: none;
+    box-shadow: 5px 5px 10px rgb(99, 98, 115);
+    margin-top: 100px;
+    margin: 1px;
+  
+  }
+  
+  #cuentaConsi {
+    position: relative;
+    left: 80px;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 14px 10px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(209, 209, 209);
+    outline: none;
+    box-shadow: 5px 5px 10px rgb(99, 98, 115);
+    margin-top: 100px;
+    margin: 1px;
+  }
+  
+  #cantidadConsi {
+    background-color: #ffffff;
+    position: relative;
+    left: 80px;
+    padding: 14px 10px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(209, 209, 209);
+    outline: none;
+    box-shadow: 5px 5px 10px rgb(99, 98, 115);
+    margin-top: 100px;
+    margin: 1px;
+  }
+  
+  #cantidadRetiro {
+    background-color: #ffffff;
+    padding: 14px 10px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(209, 209, 209);
+    outline: none;
+    box-shadow: 5px 5px 10px rgb(99, 98, 115);
+    margin-top: 100px;
+    margin: 1px;
+  }

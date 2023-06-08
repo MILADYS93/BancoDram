@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <img src="./assets/img/logodram.png" class="logo">
+    <main>
+        <section id="inicio">
+            <h2 class="titulo">Ingresa a tu cuenta</h2>
+            <form>
+                <input placeholder="Usuario" type="text" id="usuario">
+                <input placeholder="Contraseña" type="password" id="contraseña">
+                <input onclick="inicioSesion()" type="button" value="Ingresar" id="ingreso"></input>
+            </form>
+        </section>
+
+        <section id="opciones" style="display: none;">
+            <section>
+                <button class="pocisionCerrar" id="cerrar" onclick="cerrarSesion()">Cerrar sesion</button>
+            </section>
+            <section id="bienvenido">
+                <h1 class="Transacciones">Bienvenido</h1>
+                <h2 class="operaciones"> Elige la opción a realizar:</h2>
+            </section>
+
+            <section id="opciones">
+                <button onclick="consultarSaldo()" class="menu">
+                    <img src="./assets/img/BTN CONSULTAR.png " alt="CONSULTAR"></button>
+
+                <button onclick="transferir()" class="menu">
+                    <img src="./assets/img/btn transferir.png" alt="transferir"></button>
+
+                <button onclick="consignarDinero()" class="menu">
+                    <img src="./assets/img/BTN CONSIGNAR.png" alt="consignar"></button>
+
+                <button onclick="retirarDinero()" class="menu">
+
+                    <img src="./assets/img/BTN RETIRAR.png" alt="retirar"></button>
+
+                <button onclick="historial()" class="menu">
+                    <img src="./assets/img/BTN HISTORIAL.png" alt="historial"></button>
+            </section>
+        </section>
+
+        <section id="consultar" style="display: none;">
+            <section class="saldodisponible">
+                <h3>Saldo disponible:</h3>
+                <p id="saldoConsultar">$0.00</p>
+            </section>
+        </section>
+
+        <section id="transferencia" style="display: none;">
+            <section class="TransferirSaldo">
+                <section id="saldo">
+                    <h1>Transferencias</h1>
+                    <section class="saldo">
+                        <h3>Saldo disponible:</h3>
+                        <p id="saldoTransferir">$ 0.00</p>
+                    </section>
+                    <form id="formularioTranferencia">
+                        <label>Seleccione el Banco:</label>
+                        <select id="Banco" name="Banco">
+                            <option value="1">BANCOLOMBIA</option>
+                            <option value="2">BBVA</option>
+                            <option value="3">DAVIVIENDA</option>
+                            <option value="4">NEQUI</option>
+                        </select>
+
+                        <label>Cuenta Destino:</label>
+                        <input placeholder="ingrese el numero de cuenta" type="text" id="cuenta" name="Destino"
+                            required>
+
+                        <label for="cantidad">Valor a Transferir:</label>
+                        <input placeholder="$ ingrese el valor" type="text" id="cantidad">
+
+                        <button class="botontransferir" type="button"
+                            onclick="realizarTransferencia()">Transferir</button>
+                    </form>
+                </section>
+
+                <section id="factura" style="display: none;">
+                    <img id="imagenExitosa" src="assets/img/Diseño_sin_título__1_-removebg-preview.png" alt=""
+                        style="display: none;">
+                    <img id="imagenError" src="assets/img/x.png" style="display: none;">
+                    <p id="mensajeFactura"></p>
+                    <button class="botoncerrar" onclick="ocultarFactura()">Cerrar</button>
+                </section>
+            </section>
+        </section>
+
+        <!-- consignar-->
+        <section id="consignar" style="display: none;">
+            <section class="consignarSaldo">
+                <section id="saldo">
+                    <h1>Consignar</h1>
+                    <section class="saldoConsig">
+                        <h4>Saldo disponible:</h4>
+                        <p id="saldoConsignar">$ 0.00</p>
+                    </section>
+                    <form id="formularioConsignar">
+
+                        <label>Cuenta Destino:</label>
+                        <input type="text" id="cuentaConsi" name="Destino">
+
+                        <label for="cantidad">Valor a Consignar:</label>
+                        <input placeholder="$" type="text" id="cantidadConsi">
+
+                        <button class="botonConsignar" type="button" onclick="realizarConsignacion()">Consignar</button>
+                    </form>
+                </section>
+                <!-- factura consignar-->
+                <section id="facturaConsignar" style="display: none;">
+                    <img id="imagenExitosa" src="assets/img/Diseño_sin_título__1_-removebg-preview.png" alt=""
+                        style="display: none;">
+                    <img id="imagenError" src="assets/img/x.png" style="display: none;">
+                    <p id="mensajeFacturaConsignar"></p>
+                    <button class="botoncerrar" onclick="ocultarFacturaConsignar()">Cerrar</button>
+                </section>
+            </section>
+        </section>
+        <!-- retirar-->
+
+        <section id="retirar" style="display: none;">
+            <section class="retirarSaldo">
+                <section class="saldoRet">
+                    <h1>Retiros</h1>
+                    <section>
+                        <h4>Saldo disponible:</h4>
+                        <p id="saldoRetiro">$ 0.00</p>
+                    </section>
+
+                </section>
+                <form id="fomularioRetiro">
+                    <label> Retirar dinero </label>
+                    <input placeholder="Ingrese el valor a retirar" id="cantidadRetiro" type="text">
+                    <button class="botonretirar" onclick="realizarRetiro()" type="button">Retirar</button>
+                </form>
+                <p id="resultadoRetiro"></p>
+            </section>
+            <!-- factura retiro-->
+            <section id="facturaRetiro" style="display: none;">
+                <img id="imagenExitosa" src="assets/img/Diseño_sin_título__1_-removebg-preview.png" alt=""
+                    style="display: none;">
+                <img id="imagenError" src="assets/img/x.png" style="display: none;">
+                <p id="mensajeFacturaRetiro"></p>
+                <button class="botoncerrar" onclick="ocultarFacturaRetiro()">Cerrar</button>
+            </section>
+        </section>
+
+        <section id="tablaHistorial" style="display: none;">
+            <table class="tablaOperaciones" id="dataTable" width="100%" cellspacing="0">
+                <tr class="table" style="display: none;" id="iniTabla" width="100%" cellspacing="0">
+                    <th>hora y fecha</th>
+                    <th> cantidad</th>
+                    <th> Tipo de operacion</th>
+                </tr>
+            </table>
+           
+
+        </section>
+    </main>
+
+        </section>
+    </main>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
